@@ -250,6 +250,8 @@ body::before {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 .contactcontainer .contactinfo h2 {
@@ -288,11 +290,12 @@ body::before {
     position: absolute;
     padding: 70px 50px;
     background: #edede9;
+    margin-top: 50px;
     margin-left: 350px;
     padding-left: 250px;
     width: calc(100% - 40%);
-    height: 100%;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    height: 550px;
 }
 
 .contactcontainer .contactForm h2 {
@@ -375,9 +378,71 @@ body::before {
 
 /* Footer */
 
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+}
+
+.sticky-footer2 {
+    position: sticky;
+    margin-top: 30vh;
+}
+
+footer p {
+    padding: 0;
+    font-size: 0.8em;
+    color: hsla(0, 50%, 100%, 0.35);
+    margin: 1em 0;
+    font-size: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 1em 0;
+}
+
+footer ul li a {
+    padding: 1em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.904);
+    transition: 100ms;
+}
+
+footer ul li a:hover {
+    color: var(--primary);
+}
+
 footer {
+    width: 100%;
     background: #333;
     color: #fff;
-    padding: 2.5em;
-    margin-top: auto;
+    display: grid;
+    place-items: center;
+    padding: 1em;
+    font-size: 1.2rem;
+}
+
+
+/* Impressum */
+
+.impressum-text p {
+    font-weight: 400;
+    text-align: center;
+    margin: 50px;
+    float: initial;
+}
+
+.impressum-text h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.impressum-text a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.impressum-text {
+    color: #333;
 }
