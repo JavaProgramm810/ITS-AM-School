@@ -60,21 +60,24 @@ nav ul li a:hover {
 
 .about {
     width: 100%;
-    padding: 78px 0px;
+    padding: 110px 0px;
     background-color: #fff;
 }
 
 .about img {
     height: auto;
-    width: 420px;
+    width: 400px;
+    border: 15px solid transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
 }
 
 .about-text {
-    width: 550px;
+    width: 700px;
 }
 
 .main {
-    width: 1330px;
+    width: 1500px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
@@ -85,7 +88,6 @@ nav ul li a:hover {
 .about-text h2 {
     font-size: 25px;
     margin-bottom: 15px;
-    float: left;
 }
 
 .about-text p {
@@ -94,6 +96,7 @@ nav ul li a:hover {
     line-height: 28px;
     letter-spacing: 1px;
     text-align: justify;
+    font-weight: 300;
 }
 
 span a {
@@ -104,20 +107,6 @@ span a {
     font-weight: bold;
     padding: 5px 8px;
     border-radius: 20px;
-}
-
-.social {
-    margin-left: 8%;
-}
-
-.social a {
-    font-size: 30px;
-    color: white;
-    margin-right: 20px;
-}
-
-.social a:hover {
-    color: #0077b6;
 }
 
 
@@ -261,7 +250,7 @@ body::before {
 }
 
 .contactcontainer .contactinfo .info {
-    margin: 40px 0;
+    margin: 100px 0;
 }
 
 .contactcontainer .contactinfo .info li {
@@ -271,6 +260,8 @@ body::before {
     margin: 20px 0;
     cursor: pointer;
     align-items: flex-start;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .contactcontainer .contactinfo .info li span:nth-child(1) {
@@ -288,7 +279,7 @@ body::before {
 .contactcontainer .contactForm {
     position: absolute;
     padding: 70px 50px;
-    background: #edede9;
+    background: #f8f9fa;
     margin-top: 50px;
     margin-left: 350px;
     padding-left: 250px;
@@ -351,6 +342,7 @@ body::before {
     color: #333;
     transition: 0.3s;
     pointer-events: none;
+    opacity: 0.5;
 }
 
 .contactcontainer .contactForm .formularBox .inputBox input:focus~span,
@@ -362,6 +354,7 @@ body::before {
     font-weight: 400;
     letter-spacing: 1px;
     color: #0077b6;
+    opacity: 1;
 }
 
 .contactcontainer .contactForm .formularBox .inputBox input[type="submit"] {
@@ -408,10 +401,6 @@ footer ul li a {
     transition: 100ms;
 }
 
-footer ul li a:hover {
-    color: var(--primary);
-}
-
 footer {
     width: 100%;
     background: #333;
@@ -450,11 +439,26 @@ footer {
 /* Referenzen */
 
 .ref_cover img {
-    align-content: center;
-    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 .references-text p {
-    color: red;
-    padding: 10%;
+    font-size: 18px;
+    margin-bottom: 45px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.references-text {
+    width: 1250px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
